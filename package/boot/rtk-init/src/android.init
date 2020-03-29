@@ -7,4 +7,6 @@ boot() {
 	# notify android continue
 	touch /android/.coldplug_done
 	touch /rom/android/.coldplug_done
+	# hostname will changed by android, sleep, then it will be fixed in /etc/init.d/system
+	sleep 3
 }
